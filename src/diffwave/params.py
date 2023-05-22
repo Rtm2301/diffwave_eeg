@@ -43,7 +43,7 @@ params = AttrDict(
     n_mels=63,
     n_fft=1024,
     hop_samples=256,
-    crop_mel_frames=62,  # Probably an error in paper.
+    crop_mel_frames=1024,  # Probably an error in paper.
 
     # Model params
     residual_layers=30,
