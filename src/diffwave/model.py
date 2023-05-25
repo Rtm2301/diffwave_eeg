@@ -72,8 +72,8 @@ class DiffusionEmbedding(nn.Module):
 class SpectrogramUpsampler(nn.Module):
   def __init__(self, n_mels):
     super().__init__()
-    self.conv1 = ConvTranspose2d(1, 1, [3, 32], stride=[1, 4], padding=[1, 11])
-    self.conv2 = ConvTranspose2d(1, 1,  [3, 32], stride=[1, 5], padding=[1, 13])
+    self.conv1 = ConvTranspose2d(1, 1, [3, 32], stride=[1, 5], padding=[1, 14])
+    self.conv2 = ConvTranspose2d(1, 1,  [3, 32], stride=[1, 4], padding=[1, 12])
 
   def forward(self, x):
     x = torch.unsqueeze(x, 1)
